@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html>
+        <!--HEADER-->
+        <head>
+            <title>Elizabeth Sellers Portfolio</title>
+            <!--Font Stylesheets (Google Fonts)-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <!--Stylesheets-->
+            <link id="colorScheme" rel="stylesheet" type="text/css" href="style_light.css"/>
+            <!--JavaScript-->
+            <script src="js/toggleStyleSheet.js" type="text/javascript"></script>
+            <script src="js/tabs.js" type="text/javascript"></script>
+            <!--CheerpJ (Runs JAR files in browser)-->
+            <script src="https://cjrtnc.leaningtech.com/3_20240320_461/cj3loader.js"></script>
+            <h1>Elizabeth Sellers</h1>
+        </head>
+
+
+        <!--NAVIGATION-->
+        <nav>
+            <!--Subpage Links-->
+            <ul id="subpageLinks">
+                <li class="navLinks"><a href="subpages/code.html" target="_self">Code</a></li>
+                <li class="navLinks"><a href="subpages/about.html" target="_self">About</a></li>
+                <li class="navLinks"><a href="subpages/resume.html" target="_self">Resume</a></li>
+            </ul>
+            <!--Links to Job Sites-->
+            <ul class="jobSiteLinks">
+                <li><a href="https://uttyler.joinhandshake.com/stu/users/45615060" target="_blank" title="Handshake">
+                    <img src="../images/handShake_lightMode.png" alt="Handshake Link" class="jobSite" id="handshakeLogo"></a></li>
+                <li><a href="https://www.linkedin.com/in/elizabeth-sellers-54b577303/" target="_blank" title="LinkedIn">
+                    <img src="../images/linkedIn_lightMode.png" alt="LinkedIn Link" class="jobSite" id="linkedInLogo"></a></li>
+            </ul>
+        </nav>
+
+        <!--BODY-->
+        <body>
+            <!--About Me-->
+            <h2>About Elizabeth</h2>
+            <img id="photo_of_self" src="images/ProfilePic.jpg" alt="Image of Elizabeth Sellers">
+            <p id="temp">My name is Elizabeth Sellers. I live in Overton, Texas and I am a student at the Universtiy of Texas at Tyler. I have experience in software application and web development, specializing in Java, HTML, and CSS. In the past, I have created simple GUI applications and have done a freelance logo commission for a local business. While I enjoy programming and design, I also play guitar and piano and enjoy spending time outdoors with my dogs.</p>
+
+            <h3>Minesweeper</h3>
+            <script>
+                (async function () {
+                    await cheerpjInit();
+                    cheerpjCreateDisplay(1000, 800);
+                    await cheerpjRunJar("/app/jar/minesweeperclone.jar");
+                })();
+            </script>
+
+            <!--MINESWEEPER JAR-->
+            <div class="MinesweeperSideBar">
+                <div class="MinesweeperMenu">
+                    <button class="tablinks" onclick="openTab(event, 'Minesweeper_HowToPlay')" id="defaultOpen">How to Play</button>
+                    <button class="tablinks" onclick="openTab(event, 'Minesweeper_Main')">Main</button>
+                    <button class="tablinks" onclick="openTab(event, 'Minesweeper_GUI')">MinesweeperGUI</button>
+                </div>
+
+                <!--How to Play Minesweeper-->
+                <div id="Minesweeper_HowToPlay" class="tabcontent">
+                    <h3>How to Play</h3>
+                    <p>Once the game loads, you will see a popup that requests the number of rows and columns.</p>
+                    <p>Click anywhere to begin the game.</p>
+                    <p>Tiles with numbers display how many bombs touch them, either from the side, top or bottom, or corner.</p>
+                    <p></p>
+                </div>
+
+                <script>
+                    document.getElementById("defaultOpen").click();
+                </script>
+
+                <!--Main.java File of Minesweeper-->
+                <div id="Minesweeper_Main" class="tabcontent">
+                    <h3>Main</h3>
+                    <p>Test Text</p>
+                </div>
+
+                <!--MinesweeperGUI.java File of Minesweeper-->
+                <div id="Minesweeper_GUI" class="tabcontent">
+                    <h3>MinesweeperGUI</h3>
+                    <p>Test Text</p>
+                
+                    
+
+
+
+
+                </div>
+            </div>
+            <!-- END OF JAVASCRIPT JAR -->
+            
+        </body>
+
+        <!--FOOTER-->
+        <footer>
+            <p>Contact</p>
+            <button type="button" onclick="toggleStyleSheet()">Color Scheme</button>
+        </footer>
+
+    </html>
+    <!--Made by Elizabeth Sellers-->

@@ -1,0 +1,339 @@
+/*Main Webpage*/
+body {
+    background-color: #FAFAFA;
+    color: #1d1d1d;
+    padding: 0 35px;
+    font-family: "Montserrat", "Inter", "Raleway", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*Header*/
+h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    text-align: center;
+    font-size: 400%;
+    margin: 0;
+    padding: -15%;
+    color: #131653;
+}
+
+
+/*Navigation*/
+    nav {
+        margin: -20px -30px;
+        border-bottom: 1px solid #000;
+        //border-top: 1px solid #000;
+        font-family: "Lora", serif;
+        font-weight: bold;
+        background-color: #0ecb04;*/
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+        background-color: #FAFAFA;
+        padding-top: 1px;
+        height: 40px;
+        z-index: 100;
+    }
+
+
+    nav li {
+        display: inline;
+        font-size: 18px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav a:link, nav a:visited {
+        color: #131653;
+    }
+
+    nav a:hover, nav a:active {
+        color: #cb044d;
+    }
+
+    nav ul#subpageLinks {
+        padding-left: 30px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+
+    nav li.navLinks {
+        padding-right: 10px;
+        padding-bottom: -50px;
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+
+    nav ul.jobSiteLinks {
+        text-align: right;
+        margin-top: -37px;
+        margin-right: 20px;
+        padding-top: 15px;
+    }
+
+    img.jobSite {
+        height: 20px;
+        padding-right: 10px;
+    }
+
+/*Body*/
+h2 {
+    padding-top: 25px;
+    margin-bottom: -10px;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Montserrat", "Inter", "Raleway", sans-serif;
+}
+
+img#photo_of_self {
+    height: 200px;
+    width: 200px;
+    /* background: #767676; */
+    float: right;
+    margin-left: 30px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+p#temp {
+    margin-bottom: 200px;
+}
+
+/*JAR GAME WINDOW*/
+    .MinesweeperSideBar {
+        float: right;
+        width: 425px;
+    // border: #000 1px solid;
+    }
+  /* Style the tab */
+  .MinesweeperMenu {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .MinesweeperMenu button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .MinesweeperMenu button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .MinesweeperMenu button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 740px;
+    overflow: auto;
+  } 
+
+
+/*Resume Sidebar*/
+    div.sidebar {
+        background-color: #f1f0ed;
+        width: 415px;
+        margin-top: 50px;
+        padding: 0px 20px 12px 20px;
+        float: left;
+        margin-right: 20px;
+        border-radius: 5px;
+        position: sticky;
+        top: 41.5px;
+    }
+
+    div.sidebar h4 {
+        font-family: "Vollkorn", "Fraunces", serif;
+        font-size: 20px;
+        margin-bottom: -15px;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    div.sidebar p {
+        font-size: 15px;
+    }
+
+    div.sidebar img.contactIcon {
+        height: scale;
+        width: 15px;
+        background-color: #f1f0ed;
+        margin-bottom: -2px;
+        margin-right: 5px;
+    }
+
+    div.sidebar h5 {
+        font-family: "Vollkorn", "Fraunces", serif;
+        font-size: 16px;
+        margin-bottom: -10px;
+        margin-top: -10px;
+        padding-left: 5px;
+    }
+
+    div.sidebar ul {
+        list-style-type: none;
+        padding-left: 10px;
+        padding-top: 0;
+    }
+
+    div.sidebar li {
+        margin-top: 2px;
+    }
+
+    div.sidebar img.languageLogo {
+        background-color: #f1f0ed;
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        margin-bottom: -2px;
+    }
+
+    div.education {
+        margin-top: 30px;
+    }
+
+    div.education p {
+        padding: 0;
+        margin: 0;
+    }
+
+    div.shadedRow {
+        background-color: rgba(0, 0, 0, 0.05);
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 13px;
+    }
+
+    div.sidebar img#utLogo {
+        height: 150px;
+        width: scale;
+        margin-top: -20px;
+        margin-bottom: -35px;
+        margin-left:-10px;
+        padding-right: 10px;
+        float: left;
+    }
+
+
+/*Resume Main*/
+    div#resume h2 {
+        font-family: "Vollkorn", "Fraunces", serif;
+        font-size: 24px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        padding-top: 15px;
+        
+    }
+
+    div#resume {
+        padding-left: 470px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    div#resume ul {
+        list-style-type: square;
+    }
+
+    div#resume div.lightRow {
+        padding: 1px 20px;
+    }
+
+    div#resume div.darkRow {
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 10px;
+        padding: 1px 20px;        
+    }
+    
+    div#resume p {
+        margin: 5px;
+        font-size: 19px;
+        margin-bottom: -2px;
+    }
+
+    div#resume ul {
+        list-style: disc;
+        margin-top: 0;
+        padding-left: 25px;
+    }
+
+    div#resume li {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+    div.horizontalDivider {
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 3px solid #d1d1d1;
+    }
+
+    div#downloadResume img {
+        height: 30px;
+        padding: -5px 0px;
+        margin-bottom: -7px;
+        background-bottom: 1px solid #000;
+        background-color: #FAFAFA;
+    }
+
+    div#downloadResume a {
+        border-bottom: 1px solid #000;
+        text-decoration: none;
+    }
+
+    div#downloadResume a:link, div#downloadResume a:visited {
+        border-bottom: 1px solid #000;
+        color: #000;
+    }
+
+    div#downloadResume a:hover, div#downloadResume a:active {
+        border-bottom: 1px solid #000;
+        color: #cb044d;
+    }
+
+
+
+
+
+/*Footer*/
+footer {
+    /* position: absolute; */
+    position: relative;
+    bottom: 0;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+footer ul {
+    list-display: none;
+    margin: 0;
+}
+
+footer li {
+    display: inline;
+    padding-left: 0;
+    padding-right: 20px;
+    margin: 0;
+}

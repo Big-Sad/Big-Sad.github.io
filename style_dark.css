@@ -1,0 +1,89 @@
+/*Main Webpage*/
+body {
+    background-color: #4d4d4d;
+    color: #f7f7f7;
+    padding: 0 30px 0 30px;
+}
+
+/*Header*/
+h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    text-align: center;
+    font-size: 400%;
+    margin: 0;
+    padding: -15%;
+    color: #31653;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+
+/*Navigation*/
+nav {
+    margin: -20px;
+    border-bottom: 1px solid #fff;
+    font-family: "Lora", serif;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+    color: #131653;
+}
+
+nav a:hover, nav a:active {
+    color: #cb044d;
+}
+
+nav ul#subpageLinks {
+    padding-left: 30px;
+}
+
+nav li.navLinks {
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+
+ul.jobSiteLinks {
+    text-align: right;
+    margin-top: -37px;
+    margin-right: 20px;
+}
+
+img.jobSite {
+    height: 20px;
+    padding-right: 10px;
+}
+
+/*Body*/
+h2 {
+    padding-top: 25px;
+    margin-bottom: -10px;
+}
+
+p {
+
+}
+
+img#photo_of_self {
+    height: 200px;
+    width: 200px;
+    background: #767676;
+    float: right;
+    margin-left: 30px;
+    border: 0;
+}
+
+/*Footer*/
+footer {
+    position: absolute;
+    /*position: relative;*/
+    bottom: 0;
+}
