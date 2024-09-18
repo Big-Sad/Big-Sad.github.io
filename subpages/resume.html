@@ -14,6 +14,10 @@
         <!--JavaScript-->
         <script src="js/toggleStyleSheet.js" type="text/javascript"></script>
         <script src="js/tabs.js" type="text/javascript"></script>
+        <script src="js/sidebarScroll.js" type="text/javascript"></script>
+        <!--JQuery-->
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <!--CheerpJ (Runs JAR files in browser)-->
         <script src="https://cjrtnc.leaningtech.com/3_20240320_461/cj3loader.js"></script>
         <h1>Elizabeth Sellers</h1>
@@ -40,7 +44,7 @@
     <!--BODY-->
     <body>
         <!--Sidebar-->
-        <div class="sidebar">
+        <div id="sidebar">
             <!--Contact-->
             <h4 style="padding-top: 13px">Contact</h4>
                 <p><img class="contactIcon" src="https://pngimg.com/d/phone_PNG48996.png" style="margin-top: 5px;">(817)909-9458</p>
@@ -57,6 +61,7 @@
                     <li>Microsoft Office Suite</li>
                     <li>Quick Learner</li>
                     <li>Reading UMLs</li>
+                    <li>Leadership</li>
                 </ul>
                 <h5>Programming and Markup Languages</h5>
                 <ul>
@@ -64,6 +69,7 @@
                     <li><img class="languageLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png">CSS</li>
                     <li><img class="languageLogo" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png">Java</li>
                     <li><img class="languageLogo" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">C</li>
+                    <li><img class="languageLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Dart_programming_language_logo_icon.svg/2048px-Dart_programming_language_logo_icon.svg.png">Dart</li>
                 </ul>
 
             <!--Education-->
@@ -72,16 +78,22 @@
                 <p><img id="utLogo" src="https://instructure-uploads.s3.amazonaws.com/account_81440000000000001/attachments/5579587/uttyler-canvas-logo%20%2528002%2529.png"></p>
                 <p style="margin-top: 10px;"><b>University of Texas at Tyler</b></p>
                 <p style="margin-bottom: 10px;"><b><i>Tyler, Texas</i></b></p>
-                <p>Bachelor of Computer Science (BS)</p>
+                <p>Bachelor of Science in Computer Science (BS)</p>
                 <p style="margin-bottom: 10px;">Minor in Mathematics</p>
                 <div class="shadedRow">
                     <p style="float: right;">05/2027</p>
                     <p>Anticipated Graduation Date:</p>
                 </div>
                 <div style="padding: 5px;">
-                    <p style="float: right;">3.6/4.0</p>
+                    <p style="float: right;">3.75/4.0</p>
                     <p>GPA:</p>
                 </div>
+
+                <!-- <p>t</p>
+                <p>t</p>
+                <p>t</p>
+                <p>t</p>
+                <p>t</p> -->
             </div>
         </div>
         
@@ -108,29 +120,20 @@
             <!--Computer Science Projects-->
             <h2>Computer Science Projects</h2>
             <div class="darkRow">
-                <p style="float: right;">03/2023</p>
-                <p>Digital 2-Player Checkers</p>
+                <p style="float: right;">02/2024 - Present</p>
+                <p>Patriots Engage App</p>
                 <ul>
-                    <li>Simulates checkers on a computer</li>
-                    <li>Use of GUI using Java Swing</li>
-                    <li>Created custom board pieces that actively update and display in a tile arrangement</li>
-                    <li>Usable 'King' pieces</li>
+                    <li>Phone app for the Patriots Engage website</li>
+                    <li>Used Flutter framework for development</li>
+                    <li>Android and IOS compatibility</li>
+                    <li>Created in Android Studio</li>
+                    <li>Manager of a team of 4, focusing on the design one page of the app</li>
+                    <li>Assisted in creating client-side design for app</li>
+                    <li>Used Dart programming language</li>
                 </ul>
             </div>
             <div class="lightRow">
                 <p style="float: right;">04/2023 - 05/2023</p>
-                <p>Patriots Engage App</p>
-                <ul>
-                    <li>Phone app for the Patriots Engage website</li>
-                    <li>Use of GUI using Java Swing</li>
-                    <li>Android and IOS compatibility</li>
-                    <li>Created in Android Studio</li>
-                    <li>Manager of a team of 4, focusing on one page of the app</li>
-                    <li>Assisted in creating client-side design for app</li>
-                </ul>
-            </div>
-            <div class="darkRow">
-                <p style="float: right;">02/2024 - Present</p>
                 <p>Minesweeper Clone</p>
                 <ul>
                     <li>Plays Minesweeper</li>
@@ -139,6 +142,16 @@
                     <li>3 functional color schemes that can be actively applied</li>
                     <li>Custom toggle button to switch between flag mode and bomb mode</li>
                     <li>3 levels of difficulty plus a default difficulty</li>
+                </ul>
+            </div>
+            <div class="darkRow">
+                <p style="float: right;">03/2023</p>
+                <p>Digital 2-Player Checkers</p>
+                <ul>
+                    <li>Simulates checkers on a computer</li>
+                    <li>Use of GUI using Java Swing</li>
+                    <li>Created custom board pieces that actively update and display in a tile arrangement</li>
+                    <li>Usable 'King' pieces</li>
                 </ul>
             </div>
 
@@ -184,9 +197,16 @@
                 <p>The Association for Computing Machinery (ACM)</p>
                 <p><i>University of Texas at Tyler Chapter</i></p>
                 <p style="font-size: 17px;">Member</p>
-                <ul>
+                <ul style="margin-bottom: 0px;">
                     <li>Attend meetings and events twice a month</li>
                     <li>Received professional guideance from faculty members with experience in the field</li>
+                </ul>
+                <p style="font-size: 17px; float: right;">08/2024 - Present</p>
+                <p style="font-size: 17px;">Vice President</p>
+                <ul>
+                    <li>Lead workshops on topics I have proficiency in</li>
+                    <li>Lead in PResident's absence</li>
+                    <li>Create officer meeting agendas</li>
                 </ul>
             </div>
 
@@ -195,8 +215,8 @@
             <!--Downloads-->
             <h2>Download Resume</h2>
             <div id="downloadResume">
-                <a href="../download/Sellers, Elizabeth - Resume.docx" download="Sellers, Elizabeth - Resume"><p>Download .docx<img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-file-download-icon-png-image_4647924.jpg"></p></a>
-                <a href="../download/Sellers, Elizabeth - Resume.pdf" download="Sellers, Elizabeth - Resume"><p>Download .pdf<img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-file-download-icon-png-image_4647924.jpg"></p></a>
+                <p><a href="../download/Sellers, Elizabeth - Resume.docx" download="Sellers, Elizabeth - Resume">Download .docx<img src="https://pixsector.com/cache/5d353540/av3544fca9fdc10112f68.png"></a></p>
+                <p><a href="../download/Sellers, Elizabeth - Resume.pdf" download="Sellers, Elizabeth - Resume">Download .pdf<img src="https://pixsector.com/cache/5d353540/av3544fca9fdc10112f68.png"></a></p>
             </div>
 
         </div>
@@ -207,8 +227,9 @@
     <footer>
         <div style="padding-left: 470px;">
             <ul>
-                <li>Contact</li>
-                <li><button type="button" onclick="toggleStyleSheet()">Color Scheme</button></li>
+                <li><a class="email" href="mailto:elizabethsellers100@gmail.com">Contact</a></li>
+                <!--Color Scheme Toggle Button-->
+                <li><a class="colorSchemeToggle" value="true" onclick="toggleStyleSheet()"></a></li>
             </ul>
         </footer>
     </footer>

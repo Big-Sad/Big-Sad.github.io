@@ -26,7 +26,6 @@ h1 {
         //border-top: 1px solid #000;
         font-family: "Lora", serif;
         font-weight: bold;
-        background-color: #0ecb04;*/
         padding: 0 20px;
         position: sticky;
         top: 0;
@@ -150,7 +149,7 @@ p#temp {
 
 
 /*Resume Sidebar*/
-    div.sidebar {
+    div#sidebar {
         background-color: #f1f0ed;
         width: 415px;
         margin-top: 50px;
@@ -159,10 +158,11 @@ p#temp {
         margin-right: 20px;
         border-radius: 5px;
         position: sticky;
-        top: 41.5px;
+        //top: 41.5px;
+        /*bottom: null; */
     }
 
-    div.sidebar h4 {
+    div#sidebar h4 {
         font-family: "Vollkorn", "Fraunces", serif;
         font-size: 20px;
         margin-bottom: -15px;
@@ -170,11 +170,11 @@ p#temp {
         padding: 0;
     }
 
-    div.sidebar p {
+    div#sidebar p {
         font-size: 15px;
     }
 
-    div.sidebar img.contactIcon {
+    div#sidebar img.contactIcon {
         height: scale;
         width: 15px;
         background-color: #f1f0ed;
@@ -182,7 +182,7 @@ p#temp {
         margin-right: 5px;
     }
 
-    div.sidebar h5 {
+    div#sidebar h5 {
         font-family: "Vollkorn", "Fraunces", serif;
         font-size: 16px;
         margin-bottom: -10px;
@@ -190,17 +190,17 @@ p#temp {
         padding-left: 5px;
     }
 
-    div.sidebar ul {
+    div#sidebar ul {
         list-style-type: none;
         padding-left: 10px;
         padding-top: 0;
     }
 
-    div.sidebar li {
+    div#sidebar li {
         margin-top: 2px;
     }
 
-    div.sidebar img.languageLogo {
+    div#sidebar img.languageLogo {
         background-color: #f1f0ed;
         margin-right: 5px;
         width: 15px;
@@ -224,7 +224,7 @@ p#temp {
         margin-top: 13px;
     }
 
-    div.sidebar img#utLogo {
+    div#sidebar img#utLogo {
         height: 150px;
         width: scale;
         margin-top: -20px;
@@ -291,24 +291,27 @@ p#temp {
 
     div#downloadResume img {
         height: 30px;
-        padding: -5px 0px;
-        margin-bottom: -7px;
+        padding: -15px;
+        margin-bottom: -8px;
         background-bottom: 1px solid #000;
         background-color: #FAFAFA;
     }
 
+    div#downloadResume p {
+        text-decoration: none;
+    }
+
     div#downloadResume a {
-        border-bottom: 1px solid #000;
         text-decoration: none;
     }
 
     div#downloadResume a:link, div#downloadResume a:visited {
-        border-bottom: 1px solid #000;
+        text-decoration: none;
         color: #000;
     }
 
     div#downloadResume a:hover, div#downloadResume a:active {
-        border-bottom: 1px solid #000;
+        text-decoration: none;
         color: #cb044d;
     }
 
@@ -329,6 +332,9 @@ footer {
 footer ul {
     list-display: none;
     margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    border-top: 1px solid #000;
 }
 
 footer li {
@@ -337,3 +343,32 @@ footer li {
     padding-right: 20px;
     margin: 0;
 }
+
+footer a.email {
+    text-decoration: none;
+}
+
+footer a.email:link, a.email:visited {
+    color: #131653;
+}
+
+footer a.email:hover, a.email:active {
+    color: #cb044d;
+}
+
+footer .colorSchemeToggle {
+    float: right;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ffcd2b;
+    margin-top: -5px;
+}
+
+footer a.colorSchemeToggle:active {
+    background-color: #ff0000;
+}
+
+/* footer a.colorSchemeToggle:hover {
+    background-color: #ccc;
+} */
